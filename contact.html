@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Buah Adom David, a web development student.">
+  <title>Contact | Buah Adom David</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Buah Adom David</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="wrap">
+      <section>
+        <h2>Contact me</h2>
+        <p>Send me a message using the form below.</p>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <div class="error" id="name-error"></div>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <div class="error" id="email-error"></div>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <div class="error" id="message-error"></div>
+
+          <button type="submit">Send message</button>
+        </form>
+        <p id="success">Thanks! Your message is ready to send.</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 Buah Adom David. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
